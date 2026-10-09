@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,17 +20,17 @@
         }
 
         .donate-page .donate-section {
-            padding: 68px 0;
+            padding: 72px 0;
         }
 
         .donate-page .donate-section--compact {
-            padding: 24px 0 68px;
+            padding: 24px 0 72px;
         }
 
         .donate-page .donate-intro {
             max-width: 770px;
-            margin: 0 auto 36px;
-            line-height: 1.75;
+            margin: 0 auto 38px;
+            line-height: 1.8;
             font-size: 17px;
             color: #334155;
             text-align: center;
@@ -43,7 +42,7 @@
             letter-spacing: -0.025em;
             color: #001a33;
             text-align: center;
-            margin: 0 0 15px;
+            margin: 0 0 16px;
             font-weight: 700;
         }
 
@@ -54,57 +53,63 @@
         }
 
         .donate-page .donate-card {
-            background: #fff;
+            background: #ffffff;
             border: 1px solid #d9e5ee;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0, 26, 51, 0.06);
-            padding: 26px 23px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 26, 51, 0.06);
+            padding: 28px 24px;
             height: 100%;
             min-width: 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .donate-page .donate-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 26, 51, 0.11);
         }
 
         .donate-page .donate-card h3 {
             font-size: 19px;
-            line-height: 1.35;
-            margin: 0 0 13px;
+            line-height: 1.4;
+            margin: 0 0 14px;
             font-weight: 700;
             color: #001a33;
         }
 
         .donate-page .donate-card p {
             font-size: 15px;
-            line-height: 1.72;
+            line-height: 1.75;
             color: #526071;
             margin: 0;
         }
 
         .donate-page .donate-number {
             display: block;
-            color: #8fa9bf;
+            color: #7e9eb9;
             font-size: 27px;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 17px;
         }
 
         .donate-page .donate-panel {
-            background: #fff;
+            background: #ffffff;
             border: 1px solid #d9e5ee;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0, 26, 51, 0.06);
-            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 26, 51, 0.06);
+            padding: 34px;
         }
 
         .donate-page .donate-panel h3 {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: 700;
             line-height: 1.3;
             color: #001a33;
-            margin: 0 0 12px;
+            margin: 0 0 14px;
         }
 
         .donate-page .donate-panel p {
             font-size: 16px;
-            line-height: 1.75;
+            line-height: 1.8;
             color: #526071;
             margin: 0;
         }
@@ -112,30 +117,36 @@
         .donate-page .donate-sponsors {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 13px;
-            margin-top: 22px;
+            gap: 14px;
+            margin-top: 26px;
         }
 
         .donate-page .donate-sponsor {
             border: 1px solid #dce6ee;
             background: #f7fafc;
-            border-radius: 8px;
-            padding: 18px 10px;
+            border-radius: 9px;
+            padding: 20px 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 78px;
+            min-height: 85px;
             text-align: center;
             font-size: 15px;
             line-height: 1.45;
             font-weight: 600;
             color: #12314c;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .donate-page .donate-sponsor:hover {
+            background: #edf5fa;
+            border-color: #a9c5da;
         }
 
         .donate-page .donate-amount h3 {
-            font-size: 30px;
+            font-size: 32px;
             text-align: center;
-            margin-bottom: 13px;
+            margin-bottom: 15px;
         }
 
         .donate-page .donate-amount p {
@@ -143,7 +154,7 @@
         }
 
         .donate-page .donate-hero {
-            padding: 155px 24px 72px;
+            padding: 155px 24px 78px;
             text-align: center;
             min-height: 35vh;
         }
@@ -151,9 +162,10 @@
         .donate-page .donate-hero h1 {
             font-size: clamp(36px, 5vw, 50px);
             line-height: 1.15;
-            margin: 0 0 20px;
-            color: #fff;
+            margin: 0 0 22px;
+            color: #ffffff;
             font-weight: 700;
+            letter-spacing: -0.025em;
         }
 
         .donate-page .donate-hero p {
@@ -161,11 +173,11 @@
             margin: 0 auto;
             color: #e6f0f5;
             font-size: 18px;
-            line-height: 1.8;
+            line-height: 1.85;
         }
 
         .donate-page .donate-cta {
-            padding: 76px 24px;
+            padding: 82px 24px;
             text-align: center;
         }
 
@@ -173,23 +185,40 @@
             font-size: clamp(30px, 3.5vw, 40px);
             font-weight: 700;
             line-height: 1.2;
-            color: #fff;
-            margin-bottom: 18px;
+            color: #ffffff;
+            margin-bottom: 20px;
         }
 
         .donate-page .donate-cta p {
             max-width: 740px;
-            margin: 0 auto 28px;
+            margin: 0 auto 32px;
             font-size: 18px;
-            line-height: 1.8;
+            line-height: 1.85;
             color: #e6f0f5;
         }
 
         .donate-page .donate-cta a {
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            padding: 12px 28px;
+            border: 1px solid rgba(255, 255, 255, 0.75);
+            padding: 13px 30px;
             display: inline-block;
             border-radius: 8px;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .donate-page .donate-accent {
+            width: 48px;
+            height: 3px;
+            background: #2d6b9a;
+            border-radius: 4px;
+            margin: 0 auto 22px;
+        }
+
+        .donate-page .donate-donor-message {
+            background: #f5f9fc;
+            border-left: 3px solid #2d6b9a;
+            padding: 22px 25px;
+            margin-top: 24px;
+            border-radius: 0 8px 8px 0;
         }
 
         @media (max-width: 960px) {
@@ -205,11 +234,11 @@
             }
 
             .donate-page .donate-section {
-                padding: 48px 0;
+                padding: 50px 0;
             }
 
             .donate-page .donate-section--compact {
-                padding: 12px 0 48px;
+                padding: 12px 0 50px;
             }
 
             .donate-page .donate-grid,
@@ -218,11 +247,11 @@
             }
 
             .donate-page .donate-panel {
-                padding: 23px;
+                padding: 24px;
             }
 
             .donate-page .donate-hero {
-                padding: 175px 20px 55px;
+                padding: 175px 20px 58px;
             }
 
             .donate-page .donate-hero p,
@@ -235,7 +264,7 @@
             }
 
             .donate-page .donate-cta {
-                padding: 55px 20px;
+                padding: 58px 20px;
             }
         }
     </style>
@@ -259,8 +288,8 @@
             </aside>
 
             <div class="relative z-10 donate-container">
-                <h1 class="text-5xl font-bold mb-4 text-white">Support Obsidian</h1>
-                <p class="text-xl text-[#e6f0f5]">
+                <h1>Support Obsidian</h1>
+                <p>
                     Invest in the next generation of women in engineering.
                     Your support helps our all-girls FTC Team 27859 design,
                     build, compete, and develop the skills and confidence
@@ -272,40 +301,56 @@
         <section class="donate-section bg-[#e6f0f5]">
             <div class="donate-container">
                 <h2 class="donate-heading">Our Supporters</h2>
+                <div class="donate-accent"></div>
 
                 <p class="donate-intro">
-                    Meaningful opportunities begin with people who believe
-                    in our students. We are grateful to the families,
-                    businesses, and organizations whose generosity has
-                    helped the Team 27859 program grow through engineering,
+                    Behind every successful robotics program is a community
+                    that believes in its students. We are grateful to the
+                    families, businesses, and organizations whose generosity
+                    has helped Team 27859 grow through engineering,
                     competition, mentorship, and STEM education.
+                    Their support has made opportunities possible that
+                    extend far beyond the competition field.
                 </p>
 
                 <article class="donate-panel">
-                    <h3>Current Donors</h3>
+                    <h3>Looking Ahead to a New Season</h3>
                     <p>
-                        Thank you for supporting our students and helping
-                        us build toward the future.
+                        We are excited to begin another year of outreach,
+                        innovation, and community engagement as Obsidian.
+                        This season, we hope to expand our STEM initiatives,
+                        introduce more students to hands-on engineering,
+                        and create meaningful opportunities for young
+                        women to explore their potential in technology.
                     </p>
-                    <p class="mt-4 font-semibold text-[#001a33]">
-                        The Rahman Family
-                    </p>
+
+                    <div class="donate-donor-message">
+                        <p>
+                            We look forward to welcoming new supporters
+                            who share our commitment to education,
+                            opportunity, and the next generation of
+                            engineers. Every contribution helps us
+                            move that mission forward.
+                        </p>
+                    </div>
                 </article>
 
                 <article class="donate-panel mt-6">
-                    <h3>Previous Program Sponsors</h3>
+                    <h3>Previous Program Sponsors &amp; Donors</h3>
                     <p>
-                        We also recognize the supporters featured in our
-                        previous Team 27859 sponsor portfolio. Their
-                        contributions helped establish the foundation
-                        that Obsidian now carries forward.
+                        We proudly recognize the organizations and individuals
+                        who supported the previous Team 27859 program.
+                        Their contributions helped establish a strong
+                        foundation of engineering, competitive robotics,
+                        mentorship, and community involvement that
+                        Obsidian is honored to carry forward.
                     </p>
 
                     <div class="donate-sponsors">
                         <div class="donate-sponsor">Apple</div>
                         <div class="donate-sponsor">Kumon</div>
                         <div class="donate-sponsor">Qualcomm</div>
-                        <div class="donate-sponsor">Kabadji Grill</div>
+                        <div class="donate-sponsor">Kababji Grill</div>
                         <div class="donate-sponsor">Phoenicia Bakery &amp; Deli</div>
                         <div class="donate-sponsor">International Foods</div>
                         <div class="donate-sponsor">The Rahman Family</div>
@@ -318,13 +363,16 @@
         <section class="donate-section--compact bg-[#e6f0f5]">
             <div class="donate-container">
                 <h2 class="donate-heading">Why Donate?</h2>
+                <div class="donate-accent"></div>
 
                 <p class="donate-intro">
                     Your contribution supports more than a competition robot.
                     It gives young women the opportunity to solve real
                     engineering problems, take ownership of ambitious
                     projects, learn from setbacks, and inspire other
-                    students to pursue STEM.
+                    students to pursue STEM. Every donation helps turn
+                    curiosity into experience and experience into
+                    lasting achievement.
                 </p>
 
                 <div class="donate-grid">
@@ -334,7 +382,9 @@
                         <p>
                             Support the motors, sensors, electronics,
                             and fabrication materials we use to prototype,
-                            test, and improve our robot.
+                            test, and improve our robot. Every iteration
+                            gives our students the opportunity to apply
+                            engineering principles to real challenges.
                         </p>
                     </article>
 
@@ -345,7 +395,8 @@
                             Help cover competition registration,
                             transportation, and essential equipment
                             so our students can put their engineering
-                            skills to the test.
+                            skills to the test, collaborate under
+                            pressure, and grow through experience.
                         </p>
                     </article>
 
@@ -355,7 +406,9 @@
                         <p>
                             Make robotics demonstrations, coding workshops,
                             and hands-on STEM learning more accessible
-                            to younger students in our community.
+                            to younger students. By sharing our knowledge,
+                            we hope to encourage the next generation
+                            to explore engineering and technology.
                         </p>
                     </article>
 
@@ -366,6 +419,8 @@
                             Give young women hands-on responsibility
                             for programming, CAD, mechanical design,
                             strategy, teamwork, and leadership.
+                            Your support helps students develop the
+                            confidence to pursue their ambitions in STEM.
                         </p>
                     </article>
                 </div>
@@ -376,10 +431,10 @@
                         Obsidian begins a new chapter as Team 27859's
                         all-girls robotics team. We carry forward the
                         previous program's commitment to technical
-                        development, competition, mentoring, and
-                        community education while creating more
-                        opportunities for girls to grow as engineers
-                        and leaders.
+                        development, competition, mentorship, and
+                        community education while creating new
+                        opportunities for girls to grow as engineers,
+                        innovators, and leaders.
                     </p>
                 </article>
             </div>
@@ -388,12 +443,15 @@
         <section class="donate-section bg-[#e6f0f5]">
             <div class="donate-container">
                 <h2 class="donate-heading">How Much?</h2>
+                <div class="donate-accent"></div>
 
                 <p class="donate-intro">
                     Every donation makes a difference. Whether you help
                     purchase a small component or contribute toward
                     competition expenses, your support gives our students
-                    more opportunities to design, learn, and improve.
+                    more opportunities to design, experiment, learn,
+                    and improve. No contribution is too small to
+                    make a meaningful impact.
                 </p>
 
                 <div class="donate-grid">
@@ -439,23 +497,23 @@
 
         <section class="donate-cta bg-gradient-to-br from-[#003366] to-[#001a33]">
             <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-4xl font-bold mb-4 text-white">
-                    Help Us Build What Comes Next
-                </h2>
+                <h2>Help Us Build What Comes Next</h2>
 
-                <p class="text-xl text-[#e6f0f5] mb-8">
-                    Your support gives young women the resources to turn
-                    curiosity into technical expertise, challenges into
-                    achievements, and ambitions into real opportunities.
-                    Help Obsidian inspire the engineers and leaders
-                    of tomorrow.
+                <p>
+                    Every great innovation begins with an opportunity
+                    to learn, experiment, and believe in what is possible.
+                    Your support gives young women the resources to
+                    transform curiosity into technical expertise,
+                    challenges into achievements, and ambitions into
+                    meaningful futures. Together, we can inspire
+                    the engineers and leaders of tomorrow.
                 </p>
 
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#" class="inline-block px-8 py-3 text-white font-semibold rounded-lg hover:bg-white hover:text-[#003366] bg-transparent transition-colors duration-200">
+                    <a href="#" class="text-white font-semibold hover:bg-white hover:text-[#003366]">
                         Donate Online
                     </a>
-                    <a href="mailto:robotics@icbrushycreek.org" class="inline-block px-8 py-3 text-white font-semibold rounded-lg hover:bg-white hover:text-[#003366] bg-transparent transition-colors duration-200">
+                    <a href="mailto:robotics@icbrushycreek.org" class="text-white font-semibold hover:bg-white hover:text-[#003366]">
                         Contact Us
                     </a>
                 </div>
@@ -504,7 +562,7 @@
             </div>
 
             <div class="mt-8 pt-8 border-t border-[#003366] text-center text-[#e6f0f5]/80 text-sm">
-                <p>&copy; 2025 ICBC Iron Ummah. All rights reserved.</p>
+                <p>&copy; 2026 FTC Team 27859 Obsidian. All rights reserved.</p>
             </div>
         </footer>
     </main>
